@@ -1,0 +1,438 @@
+/*=============== Fonts ====================================================================================================================================================================*/
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("../fonts/roboto400.eot"), url("../fonts/roboto400.woff") format("woff"), url("../fonts/roboto400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto"), url("../fonts/roboto300.eot"), url("../fonts/roboto300.woff") format("woff"), url("../fonts/roboto300.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SentenceDEMO";
+  font-style: normal;
+  font-weight: 400;
+  src: local("SentenceDEMO"), url("../fonts/sentenceDEMO.ttf") format("truetype");
+}
+
+/*=============== /Fonts ====================================================================================================================================================================*/
+
+/*=============== Normalize ====================================================================================================================================================================*/
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+nav,
+footer,
+header,
+aside,
+main {
+  display: block;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*=============== /Normalize ====================================================================================================================================================================*/
+
+/*=============== Options ====================================================================================================================================================================*/
+
+body {
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SentenceDEMO";
+  font-weight: 400;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/*=============== /Options ====================================================================================================================================================================*/
+
+/*=============== Common ====================================================================================================================================================================*/
+
+.ibg img {
+  display: none;
+}
+
+.page-wrapper {
+  position: relative;
+}
+
+.page-wrapper__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.page-wrapper__bg .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat;
+}
+
+.page-wrapper__bg .light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: center/100% 100% repeat-y;
+}
+
+.block {
+  background: rgba(58, 32, 80, 0.7);
+  border: 4px solid #b0e31b;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.block span {
+  color: #b0e31b;
+}
+
+.block h3 {
+  font-size: 25px;
+  line-height: 27px;
+  display: inline-block;
+}
+
+.block u {
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #b0e31b;
+  margin-left: 3px;
+}
+
+.block p {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.block small {
+  font-size: 15px;
+}
+
+.block__button {
+  margin-top: 10px;
+}
+
+.block__button a {
+  text-transform: uppercase;
+  display: inline-block;
+  background: #b0e31b;
+  -webkit-box-shadow: 0px 4px 4px rgba(203, 196, 196, 0.1);
+  box-shadow: 0px 4px 4px rgba(203, 196, 196, 0.1);
+  border-radius: 20px;
+  max-width: 162px;
+  width: 100%;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #383e4b;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.block__button a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.block__button a:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+@-webkit-keyframes firefly {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes firefly {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/*=============== /Common ====================================================================================================================================================================*/
+
+@media (max-width: 499.98px) {
+  .container {
+    max-width: 660px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: 640px;
+    padding: 0 20px;
+  }
+}
+
+@media (pointer: fine) {
+  a,
+  button,
+  input[type=submit] {
+    cursor: pointer;
+  }
+}
+
+@media (pointer: coarse) {
+  a,
+  button,
+  input[type=submit] {
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+/*# sourceMappingURL=options.css.map */

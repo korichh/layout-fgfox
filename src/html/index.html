@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('partials/options/head.html')
+
+<body>
+    <div class="page">
+        <div class="page-wrapper">
+            <div class="page-wrapper__bg">
+                <div class="image ibg">
+                    <img src="img/bg.png" alt="">
+                </div>
+                <div class="light ibg">
+                    <img src="img/center-light.png" alt="">
+                </div>
+            </div>
+            @include('partials/header-footer/header.html')
+            <div class="page-content">
+                <main class="main">
+                    @include('partials/main/hero.html')
+                    @include('partials/main/hello.html')
+                    @include('partials/main/items.html')
+                    @include('partials/main/feedback.html')
+                </main>
+            </div>
+            @include('partials/header-footer/footer.html')
+        </div>
+    </div>
+</body>
+
+</html>

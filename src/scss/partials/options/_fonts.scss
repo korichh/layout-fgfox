@@ -1,0 +1,28 @@
+/*=============== Fonts ====================================================================================================================================================================*/
+
+// Roboto
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), url("../fonts/roboto400.eot"), url("../fonts/roboto400.woff") format("woff"),
+        url("../fonts/roboto400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Roboto"), url("../fonts/roboto300.eot"), url("../fonts/roboto300.woff") format("woff"),
+        url("../fonts/roboto300.ttf") format("truetype");
+}
+
+// SentenceDEMO
+@font-face {
+    font-family: "SentenceDEMO";
+    font-style: normal;
+    font-weight: 400;
+    src: local("SentenceDEMO"), url("../fonts/sentenceDEMO.ttf") format("truetype");
+}
+
+/*=============== /Fonts ====================================================================================================================================================================*/

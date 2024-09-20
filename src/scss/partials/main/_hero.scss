@@ -1,0 +1,210 @@
+/*=============== Hero ====================================================================================================================================================================*/
+
+.hero {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 900px;
+    @media (max-width: $break_480) {
+        height: 850px;
+    }
+    @media (max-width: 399.98px) {
+        height: 750px;
+    }
+    @media (max-width: $break_360) {
+        height: 650px;
+    }
+    margin-top: -60px;
+}
+.hero-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.hero-inner {
+    user-select: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .shadow-top {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: top/100% 40% repeat-x;
+    }
+    .shadow-bottom {
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: bottom/100% 58% repeat-x;
+    }
+    > .firefly {
+        position: absolute;
+        z-index: 8;
+        top: 24%;
+        right: 12%;
+        @media (max-width: $break_768) {
+            right: 8%;
+        }
+        img {
+            width: 45px;
+        }
+        animation: firefly 1.5s ease-in-out infinite alternate;
+    }
+    &__title {
+        padding: 0 15px;
+        position: absolute;
+        top: 9%;
+        z-index: 2;
+        text-align: center;
+        @media (max-width: 399.98px) {
+            top: 11%;
+        }
+        @media (max-width: $break_360) {
+        }
+        .title1 {
+            img {
+                max-width: 100%;
+            }
+        }
+        .title2 {
+            img {
+                max-width: 68%;
+            }
+        }
+    }
+    &__main {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main-shadow {
+            z-index: 1;
+            position: absolute;
+        }
+        .main {
+            z-index: 4;
+            position: absolute;
+            img {
+                max-width: 100%;
+            }
+        }
+        .circle-left-top {
+            z-index: 3;
+            position: absolute;
+            top: 11%;
+            left: 2%;
+            @media (max-width: $break_480) {
+                top: 14%;
+                left: 2%;
+            }
+            @media (max-width: 399.98px) {
+                top: 20%;
+            }
+            @media (max-width: $break_360) {
+                top: 21%;
+            }
+            .firefly {
+                position: absolute;
+                top: 0;
+                left: -30px;
+                img {
+                    transform: scaleX(-1) rotate(18deg);
+                    width: 70px;
+                }
+                animation: firefly 1.4s 0.1s ease-in-out infinite alternate;
+            }
+            .circle-text {
+                left: 15%;
+            }
+        }
+        .circle-right-middle {
+            z-index: 6;
+            position: absolute;
+            top: 44%;
+            right: -3%;
+            .firefly {
+                position: absolute;
+                img {
+                    width: 95px;
+                }
+                top: -45px;
+                animation: firefly 1.3s 0.2s ease-in-out infinite alternate;
+            }
+            .circle-text {
+                top: 20%;
+                left: 4%;
+            }
+        }
+        .circle-left-bottom {
+            z-index: 7;
+            position: absolute;
+            bottom: -10%;
+            left: 15%;
+            @media (max-width: $break_480) {
+                bottom: -8%;
+                left: 12%;
+            }
+            @media (max-width: 399.98px) {
+                bottom: 0%;
+            }
+            .firefly {
+                position: absolute;
+                top: -60px;
+                img {
+                    width: 120px;
+                    transform: scaleX(-1) rotate(11deg);
+                    @media (max-width: $break_480) {
+                        width: 100px;
+                    }
+                }
+                animation: firefly 1.2s 0.3s ease-in-out infinite alternate;
+            }
+        }
+        .circle-inner {
+            position: relative;
+            width: 170px;
+            height: 170px;
+            @media (max-width: $break_480) {
+                width: 150px;
+                height: 150px;
+            }
+            @media (max-width: 399.98px) {
+                width: 120px;
+                height: 120px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle {
+            position: absolute;
+            img {
+                width: 100%;
+            }
+        }
+        .circle-shadow {
+            position: absolute;
+            width: 200px;
+            img {
+                width: 100%;
+            }
+        }
+        .circle-text {
+            position: absolute;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*=============== /Hero ====================================================================================================================================================================*/

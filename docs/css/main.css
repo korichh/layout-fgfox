@@ -1,0 +1,628 @@
+/*=============== Hero ====================================================================================================================================================================*/
+
+.hero {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 900px;
+  margin-top: -60px;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-inner {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hero-inner .shadow-top {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: top/100% 40% repeat-x;
+}
+
+.hero-inner .shadow-bottom {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: bottom/100% 58% repeat-x;
+}
+
+.hero-inner > .firefly {
+  position: absolute;
+  z-index: 8;
+  top: 24%;
+  right: 12%;
+  -webkit-animation: firefly 1.5s ease-in-out infinite alternate;
+  animation: firefly 1.5s ease-in-out infinite alternate;
+}
+
+.hero-inner > .firefly img {
+  width: 45px;
+}
+
+.hero-inner__title {
+  padding: 0 15px;
+  position: absolute;
+  top: 9%;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-inner__title .title1 img {
+  max-width: 100%;
+}
+
+.hero-inner__title .title2 img {
+  max-width: 68%;
+}
+
+.hero-inner__main {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hero-inner__main .main-shadow {
+  z-index: 1;
+  position: absolute;
+}
+
+.hero-inner__main .main {
+  z-index: 4;
+  position: absolute;
+}
+
+.hero-inner__main .main img {
+  max-width: 100%;
+}
+
+.hero-inner__main .circle-left-top {
+  z-index: 3;
+  position: absolute;
+  top: 11%;
+  left: 2%;
+}
+
+.hero-inner__main .circle-left-top .firefly {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  -webkit-animation: firefly 1.4s 0.1s ease-in-out infinite alternate;
+  animation: firefly 1.4s 0.1s ease-in-out infinite alternate;
+}
+
+.hero-inner__main .circle-left-top .firefly img {
+  -webkit-transform: scaleX(-1) rotate(18deg);
+  -ms-transform: scaleX(-1) rotate(18deg);
+  transform: scaleX(-1) rotate(18deg);
+  width: 70px;
+}
+
+.hero-inner__main .circle-left-top .circle-text {
+  left: 15%;
+}
+
+.hero-inner__main .circle-right-middle {
+  z-index: 6;
+  position: absolute;
+  top: 44%;
+  right: -3%;
+}
+
+.hero-inner__main .circle-right-middle .firefly {
+  position: absolute;
+  top: -45px;
+  -webkit-animation: firefly 1.3s 0.2s ease-in-out infinite alternate;
+  animation: firefly 1.3s 0.2s ease-in-out infinite alternate;
+}
+
+.hero-inner__main .circle-right-middle .firefly img {
+  width: 95px;
+}
+
+.hero-inner__main .circle-right-middle .circle-text {
+  top: 20%;
+  left: 4%;
+}
+
+.hero-inner__main .circle-left-bottom {
+  z-index: 7;
+  position: absolute;
+  bottom: -10%;
+  left: 15%;
+}
+
+.hero-inner__main .circle-left-bottom .firefly {
+  position: absolute;
+  top: -60px;
+  -webkit-animation: firefly 1.2s 0.3s ease-in-out infinite alternate;
+  animation: firefly 1.2s 0.3s ease-in-out infinite alternate;
+}
+
+.hero-inner__main .circle-left-bottom .firefly img {
+  width: 120px;
+  -webkit-transform: scaleX(-1) rotate(11deg);
+  -ms-transform: scaleX(-1) rotate(11deg);
+  transform: scaleX(-1) rotate(11deg);
+}
+
+.hero-inner__main .circle-inner {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hero-inner__main .circle {
+  position: absolute;
+}
+
+.hero-inner__main .circle img {
+  width: 100%;
+}
+
+.hero-inner__main .circle-shadow {
+  position: absolute;
+  width: 200px;
+}
+
+.hero-inner__main .circle-shadow img {
+  width: 100%;
+}
+
+.hero-inner__main .circle-text {
+  position: absolute;
+  width: 100%;
+}
+
+.hero-inner__main .circle-text img {
+  width: 100%;
+}
+
+/*=============== /Hero ====================================================================================================================================================================*/
+
+/*=============== Hello ====================================================================================================================================================================*/
+
+.hello {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 45px;
+}
+
+.hello-wrapper {
+  position: relative;
+}
+
+.hello-bg .shadow-top {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: top/100% 40% repeat-x;
+  margin-top: -10px;
+}
+
+.hello-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hello-block {
+  position: relative;
+  padding: 30px;
+}
+
+.hello-block .firefly-top {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  top: -30%;
+  right: -10%;
+  -webkit-animation: firefly 1.5s 0s ease-in-out infinite alternate;
+  animation: firefly 1.5s 0s ease-in-out infinite alternate;
+}
+
+.hello-block .firefly-top img {
+  width: 144px;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.hello-block .firefly-bottom {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  bottom: -16%;
+  left: -7%;
+  -webkit-animation: firefly 1.4s 0.1s ease-in-out infinite alternate;
+  animation: firefly 1.4s 0.1s ease-in-out infinite alternate;
+}
+
+.hello-block .firefly-bottom img {
+  width: 96px;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/*=============== /Hello ====================================================================================================================================================================*/
+
+/*=============== Items ====================================================================================================================================================================*/
+
+.items {
+  margin-bottom: 45px;
+}
+
+.items-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.items-wrapper .firefly-top {
+  pointer-events: none;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  opacity: 0.7;
+  -webkit-animation: firefly 1.5s 0s ease-in-out infinite alternate;
+  animation: firefly 1.5s 0s ease-in-out infinite alternate;
+}
+
+.items-wrapper .firefly-top img {
+  width: 66px;
+}
+
+.items-wrapper .firefly-bottom {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  opacity: 0.7;
+  -webkit-animation: firefly 1.4s 0.1s ease-in-out infinite alternate;
+  animation: firefly 1.4s 0.1s ease-in-out infinite alternate;
+}
+
+.items-wrapper .firefly-bottom img {
+  width: 44px;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.items-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -13px;
+}
+
+.items-list__left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  padding: 0 13px;
+}
+
+.items-list__left .items-block:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.items-list__right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  padding: 0 13px;
+}
+
+.items-list__right .items-block {
+  height: 100%;
+}
+
+.items-block {
+  width: 100%;
+  border: 4px solid #b0e31b;
+  border-radius: 20px;
+  background: rgba(58, 32, 80, 0.7);
+  overflow: hidden;
+}
+
+.items-block__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.items-block__image {
+  width: 100%;
+}
+
+.items-block__image img {
+  width: 100%;
+  -webkit-transform: scale(1.05) translateY(2%);
+  -ms-transform: scale(1.05) translateY(2%);
+  transform: scale(1.05) translateY(2%);
+}
+
+.items-block__title {
+  position: absolute;
+  bottom: 80px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-family: "Roboto";
+}
+
+.items-block__button {
+  position: absolute;
+  bottom: 20px;
+  max-width: 192px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+/*=============== /Items ====================================================================================================================================================================*/
+
+/*=============== Feedback ====================================================================================================================================================================*/
+
+.feedback {
+  margin-bottom: 50px;
+}
+
+.feedback-wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feedback-wrapper .firefly-bottom {
+  pointer-events: none;
+  position: absolute;
+  right: 20px;
+  bottom: -35px;
+  opacity: 0.7;
+  -webkit-animation: firefly 1.5s 0s ease-in-out infinite alternate;
+  animation: firefly 1.5s 0s ease-in-out infinite alternate;
+}
+
+.feedback-wrapper .firefly-bottom img {
+  -webkit-transform: rotate(-33deg);
+  -ms-transform: rotate(-33deg);
+  transform: rotate(-33deg);
+  width: 86px;
+}
+
+.feedback-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.feedback-list__block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  padding: 0 15px;
+}
+
+.feedback-block__inner {
+  background: rgba(58, 32, 80, 0.7);
+  border: 4px solid #b0e31b;
+  border-radius: 20px;
+  padding: 20px 10px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedback-block__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.feedback-block__button {
+  max-width: 160px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/*=============== /Feedback ====================================================================================================================================================================*/
+
+@media (max-width: 767.98px) {
+  .hero-inner > .firefly {
+    right: 8%;
+  }
+
+  .items-block__title {
+    font-size: 21px;
+    bottom: 70px;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .items-block__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .hello-block {
+    padding: 20px;
+  }
+
+  .items-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .items-list__left .items-block {
+    margin-bottom: 26px;
+  }
+
+  .items-block__title {
+    font-size: 24px;
+    bottom: 90px;
+  }
+
+  .items-block__button {
+    bottom: 30px;
+  }
+
+  .feedback-wrapper .firefly-bottom {
+    right: 0;
+  }
+
+  .feedback-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .feedback-list__block:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .hero {
+    height: 850px;
+  }
+
+  .hero-inner__main .circle-left-top {
+    top: 14%;
+    left: 2%;
+  }
+
+  .hero-inner__main .circle-left-bottom {
+    bottom: -8%;
+    left: 12%;
+  }
+
+  .hero-inner__main .circle-left-bottom .firefly img {
+    width: 100px;
+  }
+
+  .hero-inner__main .circle-inner {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hello-block .firefly-top {
+    top: -15%;
+    right: -12%;
+  }
+
+  .hello-block .firefly-top img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .hero {
+    height: 750px;
+  }
+
+  .hero-inner__title {
+    top: 11%;
+  }
+
+  .hero-inner__main .circle-left-top {
+    top: 20%;
+  }
+
+  .hero-inner__main .circle-left-bottom {
+    bottom: 0%;
+  }
+
+  .hero-inner__main .circle-inner {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .hero {
+    height: 650px;
+  }
+
+  .hero-inner__main .circle-left-top {
+    top: 21%;
+  }
+
+  .hello-block {
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

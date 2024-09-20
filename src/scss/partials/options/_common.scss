@@ -1,0 +1,104 @@
+/*=============== Common ====================================================================================================================================================================*/
+
+.ibg img {
+    display: none;
+}
+
+.page-wrapper {
+    position: relative;
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: center/cover no-repeat;
+        }
+        .light {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: center/100% 100% repeat-y;
+        }
+    }
+}
+
+.block {
+    background: rgba(58, 32, 80, 0.7);
+    border: 4px solid #b0e31b;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    span {
+        color: #b0e31b;
+    }
+    h3 {
+        font-size: 25px;
+        line-height: 27px;
+        display: inline-block;
+    }
+    u {
+        font-family: "Roboto";
+        text-decoration: none;
+        color: #b0e31b;
+        margin-left: 3px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px;
+    }
+    small {
+        font-size: 15px;
+    }
+    // .block__inner
+
+    &__inner {
+    }
+
+    // .block__button
+
+    &__button {
+        margin-top: 10px;
+        a {
+            text-transform: uppercase;
+            display: inline-block;
+            background: #b0e31b;
+            box-shadow: 0px 4px 4px rgba(203, 196, 196, 0.1);
+            border-radius: 20px;
+            max-width: 162px;
+            width: 100%;
+            padding: 10px 15px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 15px;
+            text-align: center;
+            color: #383e4b;
+            text-decoration: none;
+
+            transition: transform 0.3s ease 0s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+@keyframes firefly {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+/*=============== /Common ====================================================================================================================================================================*/
